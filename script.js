@@ -22,9 +22,7 @@ function generatePassword() {
 
     passBox.value = password;
 
-};
-
-let copyIcon = document.querySelector('#copy-icon');
+    let copyIcon = document.querySelector('#copy-icon');
 
 document.getElementById('copy-btn')
 .addEventListener("click", () => {
@@ -34,7 +32,7 @@ document.getElementById('copy-btn')
 
         // passBox.setAttribute("Placeholder", "Text copied to Clipboard");
 
-        passBox.value = "Text copied to Clipboard";
+        // passBox.value = "Text copied to Clipboard";
         copyIcon.src = 'img/check.png';
 
         setTimeout(() => {
@@ -44,3 +42,7 @@ document.getElementById('copy-btn')
     } 
 
 });
+
+};
+
+
